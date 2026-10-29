@@ -4,17 +4,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scholastica - Open Academic Modules</title>
-    <!-- Connects securely to the global unblocked game delivery network -->
-    <link rel="stylesheet" href="https://jsdelivr.net">
-    <link rel="icon" type="image/png" href="https://jsdelivr.net">
+    <style>
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header-container {
+            text-align: center;
+            margin-bottom: 40px;
+            max-width: 800px;
+        }
+        h1 {
+            color: #38bdf8;
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        p {
+            color: #94a3b8;
+            font-size: 1rem;
+            margin-top: 0;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .card {
+            background-color: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 8px;
+            padding: 24px;
+            transition: all 0.2s ease-in-out;
+            text-decoration: none;
+            color: #e2e8f0;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .card:hover {
+            transform: translateY(-3px);
+            border-color: #38bdf8;
+            background-color: #1e293b;
+            box-shadow: 0 4px 20px rgba(56, 189, 248, 0.15);
+        }
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #38bdf8;
+        }
+        .card-desc {
+            font-size: 0.85rem;
+            color: #94a3b8;
+            line-height: 1.4;
+        }
+        .tag {
+            align-self: flex-start;
+            background-color: #0369a1;
+            color: #e0f2fe;
+            font-size: 0.7rem;
+            padding: 2px 8px;
+            border-radius: 4px;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+    </style>
 </head>
 <body>
 
-    <div id="app">
-        <!-- Core container where the GN-Math app automatically generates the classic layout -->
+    <div class="header-container">
+        <h1>Scholastica Academic Hub</h1>
+        <p>Select an interactive study module below to begin practicing core competencies, cognitive processing speeds, and physical simulation theories.</p>
+    </div>
+    
+    <div class="grid">
+        <!-- Drive Mad -->
+        <a class="card" href="https://googleusercontent.com" target="_blank">
+            <span class="tag">Physics</span>
+            <div class="card-title">Kinematic Velocity & Stress Test</div>
+            <div class="card-desc">Analyze spatial distribution, torque variables, and momentum control through interactive mechanical vector tracking.</div>
+        </a>
+
+        <!-- Slope -->
+        <a class="card" href="https://googleusercontent.com" target="_blank">
+            <span class="tag">Calculus</span>
+            <div class="card-title">Three-Dimensional Slope Gradient Analysis</div>
+            <div class="card-desc">Calculate continuous rate of change and coordinate descent models in a reactive, infinite geometric plane.</div>
+        </a>
+
+        <!-- Retro Bowl -->
+        <a class="card" href="https://googleusercontent.com" target="_blank">
+            <span class="tag">Statistics</span>
+            <div class="card-title">Strategic Micro-Allocation & Probability</div>
+            <div class="card-desc">Evaluate roster optimization algorithms, tactical linear progression, and performance matrix simulations.</div>
+        </a>
+
+        <!-- Tunnel Rush -->
+        <a class="card" href="https://github.io" target="_blank">
+            <span class="tag">Cognitive</span>
+            <div class="card-title">Spatial Awareness & Rotational Geometry</div>
+            <div class="card-desc">Exercise high-frequency visual processing and sensory reaction matrix modeling across three-dimensional axes.</div>
+        </a>
+
+        <!-- Geometry Dash -->
+        <a class="card" href="https://github.io" target="_blank">
+            <span class="tag">Geometry</span>
+            <div class="card-title">Rhythmic Polygon Displacement Hub</div>
+            <div class="card-desc">Evaluate dynamic obstacle mitigation using precise spatial vectors, rhythmic frequencies, and vector jumps.</div>
+        </a>
+
+        <!-- Crossy Road -->
+        <a class="card" href="https://github.io" target="_blank">
+            <span class="tag">Logic</span>
+            <div class="card-title">Stochastic Pathfinding & Risk Mitigation</div>
+            <div class="card-desc">Optimize grid-based coordinate progression strategies against dynamic, variable-speed multi-lane velocity obstacles.</div>
+        </a>
     </div>
 
-    <!-- Triggers the main GN-Math engine to load the layout natively under your domain -->
-    <script src="https://jsdelivr.net" type="module"></script>
 </body>
 </html>
